@@ -9,3 +9,5 @@ eureka:
     hostname: api-service-registry.herokuapp.com
     homePageUrl: https://${eureka.instance.hostName}/
     home-page-url-path: https://${eureka.instance.hostName}
+    secure-port-enabled: true
+    non-secure-port-enabled: true
