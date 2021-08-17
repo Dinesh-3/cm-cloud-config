@@ -2,12 +2,12 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
-    service-url:
-      defaultZone: https://api-service-registry.herokuapp.com/eureka
+    serviceUrl:
+      defaultZone: http://api-service-registry.herokuapp.com/eureka
+      non-secure-port: 80
       
   instance:
     hostname: api-service-registry.herokuapp.com
     homePageUrl: https://${eureka.instance.hostName}/
     home-page-url-path: https://${eureka.instance.hostName}
-    secure-port-enabled: false
-    non-secure-port-enabled: true
+    non-secure-port: 80
