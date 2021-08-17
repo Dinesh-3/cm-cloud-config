@@ -5,4 +5,4 @@ eureka:
     service-url:
       defaultZone: http://api-service-registry.herokuapp.com/eureka
   instance:
-    hostname: api-service-registry.herokuapp.com
+    hostname: api-gateway-v1.herokuapp.com
